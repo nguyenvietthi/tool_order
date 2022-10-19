@@ -22,7 +22,7 @@ creads = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", sc
 client = gspread.authorize(creads)
 
 spreadsheet = client.open("test_oder")
-sk = Skype("0366939260", "vietthind1147258")
+sk = Skype("0366939260", "")
 
 chat = sk.chats
 contacts = sk.contacts
