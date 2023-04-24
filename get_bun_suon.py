@@ -39,10 +39,10 @@ for order_user in list_order_user:
     content_remove_plus = content.replace("+", "")
     index_trash = content.find("<")
     # print(index_trash)
-    # if(index_trash != -1):
-    content_remove = content[:index_trash]
-    # else:
-    #     content_remove = content
+    if(index_trash != -1):
+        content_remove = content[:index_trash]
+    else:
+        content_remove = content
     content_remove = content_remove.replace("\n", "")
     number_of_order = sum([int(s) for s in content_remove_plus.split() if s.isdigit()])
     total = total + number_of_order
