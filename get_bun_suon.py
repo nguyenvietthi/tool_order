@@ -33,6 +33,7 @@ for i in megs:
 
 # print(list_order_user)
 total = 0
+print("DATE:", today_date)
 for order_user in list_order_user:
     content = list_order_user[order_user]
     content_remove_plus = content.replace("+", "")
@@ -47,13 +48,7 @@ for order_user in list_order_user:
     total = total + number_of_order
     # print(number_of_order)
     print(order_user, end=": ")
-    print(number_of_order, end=" =>>> content: ")
-    print(content_remove)
+    print(number_of_order, end=" \n\tContent: \"")
+    print(content_remove, end = "\" \n")
 
 print("\nTOTAL: ",total)
-# wks.update('O1', 'thinv0' )
-
-# if(wks.get("O1")[0][0] == "thinv0"):
-#     print("dfsdfsd")
-
-# print(get_row("manhnd.dti"))
